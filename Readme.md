@@ -1,13 +1,10 @@
-Using Type Providers in dotnet core v2.0
+###Using Type Providers in dotnet core v2.0
 
+#####Steps:
 
-** Shamelessly copied from: https://github.com/Microsoft/visualfsharp/issues/3303
+- Install an F# Compiler that runs on .NET Framework or Mono, see Linux, Windows, OSX. It is likely you already have one installed.
 
-Steps:
-
-    Install an F# Compiler that runs on .NET Framework or Mono, see Linux, Windows, OSX. It is likely you already have one installed.
-
-    Add FscToolPath and FscToolExe settings to your project file:
+- Add FscToolPath and FscToolExe settings to your project file:
 
 ```
   <PropertyGroup>
@@ -31,3 +28,5 @@ Steps:
 
 You can then use "dotnet build", "dotnet restore" etc.
 
+
+** Shamelessly copied from: https://github.com/Microsoft/visualfsharp/issues/3303
