@@ -1,0 +1,1 @@
+How to enable type providers with new-style .NET SDK project files (and in some cases .NET Core programming too) #3303 
