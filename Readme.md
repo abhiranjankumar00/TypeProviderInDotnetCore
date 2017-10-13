@@ -1,6 +1,6 @@
-###Using Type Providers in dotnet core v2.0
+### Using Type Providers in dotnet core v2.0
 
-#####Steps:
+##### Steps:
 
 - Install an F# Compiler that runs on .NET Framework or Mono, see Linux, Windows, OSX. It is likely you already have one installed.
 
