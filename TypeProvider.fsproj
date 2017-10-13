@@ -1,4 +1,5 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
@@ -20,7 +21,6 @@
     <FscToolPath>/usr/bin</FscToolPath>
     <FscToolExe>fsharpc</FscToolExe>
   </PropertyGroup>
-
   <ItemGroup>
     <Content Include="template.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -35,9 +35,8 @@
     <Compile Include="ExcelProviderTest.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="ExcelProvider" Version="0.8.2" />
-    <PackageReference Include="FSharp.Data" Version="2.4.1" />
   </ItemGroup>
+  <Import Project=".paket\Paket.Restore.targets" />
 </Project>
