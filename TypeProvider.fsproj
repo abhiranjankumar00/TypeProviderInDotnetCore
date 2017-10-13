@@ -35,8 +35,5 @@
     <Compile Include="ExcelProviderTest.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="ExcelProvider" Version="0.8.2" />
-  </ItemGroup>
   <Import Project=".paket\Paket.Restore.targets" />
 </Project>
