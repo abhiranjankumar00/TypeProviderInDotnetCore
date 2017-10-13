@@ -3,7 +3,6 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
-
   <PropertyGroup>
     <IsWindows Condition="'$(OS)' == 'Windows_NT'">true</IsWindows>
     <IsOSX Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::OSX)))' == 'true'">true</IsOSX>
@@ -23,9 +22,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="template.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Excel.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="CsvProviderTest.fs" />
+    <Compile Include="ExcelProviderTest.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
+
   <ItemGroup>
+    <PackageReference Include="ExcelProvider" Version="0.8.2" />
     <PackageReference Include="FSharp.Data" Version="2.4.1" />
   </ItemGroup>
 </Project>
